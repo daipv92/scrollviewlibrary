@@ -1,0 +1,3 @@
+include ':app'
+include ':ScrollViewLib'
+project(':ScrollViewLib').projectDir = new File(settingsDir,'../ScrollViewLib/')

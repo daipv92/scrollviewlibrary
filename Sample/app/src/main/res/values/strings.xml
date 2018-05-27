@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SampleHorizontalView</string>
+
+    <string name="title_mask">Mask</string>
+    <string name="title_blur_size">Blur</string>
+    <string name="title_border_setting">Setting</string>
+    <string name="title_finger_settings">Finger</string>
+    <string name="rotate_setting">Rotate</string>
+</resources>
