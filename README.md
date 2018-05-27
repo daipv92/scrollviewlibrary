@@ -1,16 +1,16 @@
 # ScrollViewLibrary
 
-A simple scroll view to allow add views to view group which can scroll horizontally or vertically.
-we designed the library with the best Design Pattern. It helps you easy to implement and custom if need.
+- A simple scroll view to allow add views to view group which can scroll horizontally or vertically.
+- we designed the library with the best Design Pattern. It helps you easy to implement and custom if need.
 
 
 ## How to install
 
-we created a sample project to help you how to build your project with our own ScrollViewLib.
-First, you need to clone this project to local. Then, config your project as our Sample project to use.
+- we created a sample project to help you how to build your project with our own ScrollViewLib.
+- First, you need to clone this project to local. Then, config your project as our Sample project to use.
 
 Specifically,
-1. Copy our own ScrollViewLib project to the same level with your project.
+1. Copy our own ScrollViewLib project to the same folder level with your project.
 2. Add these lines in your `settings.gradle` file:
 ```
 include ':ScrollViewLib'
@@ -25,9 +25,9 @@ implementation project(':ScrollViewLib')
 ## How to use
 
 we created a sample to use ScrollViewLib in our Sample project. So, please check it.
+
 By the way, I note it again. 
 1. Include the `CustomScrollView` into your layout `xml` file.
-
 ```xml
 <com.reviewmobileapps.scrollviewlib.CustomScrollView
         android:id="@+id/horizontal_view"
@@ -40,7 +40,7 @@ By the way, I note it again.
         app:item_selectable="true"/>
 ```
 
-2. Initialize it when main Activity is created.
+2. Initialize CustomScrollView when your main Activity is created.
 ```java
 CustomScrollView horizontalView = (CustomScrollView) findViewById(R.id.horizontal_view);
 horizontalView.addItem(new ThumbnailWithTitleCardItem(R.drawable.ic_baseline_filter_frames, IScrollViewItem.Type.SHAPE_SETTING, R.string.title_mask));
@@ -55,8 +55,8 @@ horizontalView.select(0);
 That's it !!!
 
 ## Customization
-The following attributes can be set either via xml.
 
+The following attributes can be set either xml to custom how child view display.
 ```xml
 <declare-styleable name="CustomScrollView">
         <attr name="orientation" format="enum">
@@ -77,10 +77,14 @@ The following attributes can be set either via xml.
 </declare-styleable>
 ```
 
-## Sample
-Refer to the sample project to see a live example of this library in action.
+Or you also can create new custom classes inherit from our base classes. Then, handle it as the way you want.
 
-![sample](https://raw.githubusercontent.com/PicnicSupermarket/FingerPaintView/master/sample.gif)
+## Sample
+Build our Sample project to know the interface.
+we built it and the interface as below:
+
+![sample](./screenshots/screenshot1.png)
+![sample](./screenshots/screenshot2.png)
 
 ## Contributing
 
