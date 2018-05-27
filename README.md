@@ -84,7 +84,6 @@ Build our Sample project to know the interface.
 we built it and the interface as below:
 
 ![sample](./screenshots/screenshot1.png)
-![sample](./screenshots/screenshot2.png)
 
 ## Contributing
 
